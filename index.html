@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VideoFetchr - Online videeo downloader</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/35cf9f839f.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    
+    <nav>
+
+        <h4><span>Video</span>Fetchr</h4>
+        <input type="checkbox" id="bar"><label class="fa-solid fa-bars fa-lg" for="bar"></label>
+        <ul>
+
+            <li><a href="/">Home</a></li>
+            <li class="selected" onclick="change(YOUTUBE)">YouTube</li>
+
+        </ul>
+
+    </nav>
+
+    <section>
+
+        
+        <div>
+            
+            <h1><span>Video</span>Fetchr</h1>
+            <h3>Download <span id="media">YouTube</span> videos for free</h3>
+            <form action="/" onsubmit="sendRequest()">
+
+                <input type="url" id="url" placeholder="URL" required>
+
+            </form>
+
+        </div>
+
+    </section>
+    <div id="loading-container">
+
+        <i class="fa-solid fa-xmark fa-2xl" onclick="Close()"></i>
+
+        <div id="result">
+
+            <iframe id="video" src="" frameborder="0"></iframe>
+            <div></div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
