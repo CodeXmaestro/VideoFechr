@@ -37,7 +37,7 @@ function sendRequest() {
 
     showVideo();
 
-    fetch("http://192.168.203.148:5000/videofechr", {
+    fetch("https://codexmaestro.pythonanywhere.com/videofechr", {
 
         method: "POST",
         body: JSON.stringify({
